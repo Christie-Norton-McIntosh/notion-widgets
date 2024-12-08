@@ -1,156 +1,167 @@
-<p>&lt;!DOCTYPE html&gt;
-<html lang="en"></p>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"  
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><br/>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
- <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
 
-<p><style>
- .tz-gallery {<br/>
- padding: 40px;<br/>
- }</p>
+  <style>
+    .tz-gallery {
+      padding: 40px;
+    }
 
-<pre><code>.tz-gallery .thumbnail {  
-  padding: 0;  
-  margin-bottom: 30px;  
-  background-color: #fff;  
-  border-radius: 4px;  
-  border: none;  
-  transition: 0.15s ease-in-out;  
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);  
-}
+    .tz-gallery .thumbnail {
+      padding: 0;
+      margin-bottom: 30px;
+      background-color: #fff;
+      border-radius: 4px;
+      border: none;
+      transition: 0.15s ease-in-out;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    }
 
-.tz-gallery .thumbnail:hover {  
-  transform: translateY(-10px) scale(1.02);  
-}
+    .tz-gallery .thumbnail:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
 
-.baguetteBox-button {  
-  background-color: transparent !important;  
-}
+    .baguetteBox-button {
+      background-color: transparent !important;
+    }
 
 
-.carousel-inner&gt;.item&gt;a&gt;img,  
-.carousel-inner&gt;.item&gt;img,  
-.img-responsive,  
-.thumbnail a&gt;img,  
-.thumbnail&gt;img {  
-  display: block;  
-  max-width: 100%;  
-  height: auto;  
-}
-</code></pre>
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 
-<p></style></p>
 </head>
 
-<p><body></p>
- <main>
-
-<pre><code>&lt;section id=&quot;gallery&quot;&gt;
-  &lt;div class=&quot; gallery-container container&quot;&gt;
-    &lt;div class=&quot;tz-gallery&quot;&gt;
-
-      &lt;div class=&quot;row&quot;&gt;
-
-        &lt;!----------------------------------------------&gt;
-        &lt;div data-aos=&quot;flip-up&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;1.png&quot;&gt;
-              &lt;img src=&quot;1.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;20&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;2.png&quot;&gt;
-              &lt;img src=&quot;2.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;40&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;3.png&quot;&gt;
-              &lt;img src=&quot;3.png&quot;&gt;
-            &lt;/a&gt;
-
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;60&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;4.png&quot;&gt;
-              &lt;img src=&quot;4.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;80&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;5.png&quot;&gt;
-              &lt;img src=&quot;5.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;100&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;6.png&quot;&gt;
-              &lt;img src=&quot;6.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;120&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;7.png&quot;&gt;
-              &lt;img src=&quot;7.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;140&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;8.png&quot;&gt;
-              &lt;img src=&quot;8.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;!----------------------------------------------&gt;
-
-        &lt;div data-aos=&quot;flip-up&quot; data-aos-delay=&quot;160&quot; class=&quot;col-sm-6 col-md-4&quot;&gt;
-          &lt;div class=&quot;thumbnail&quot;&gt;
-            &lt;a class=&quot;lightbox&quot; href=&quot;9.png&quot;&gt;
-              &lt;img src=&quot;9.png&quot;&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
+<body>
 
 
+  <main>
 
 
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    <section id="gallery">
+      <div class=" gallery-container container">
+        <div class="tz-gallery">
 
-  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js&quot;&gt;&lt;/script&gt;
-  &lt;script&gt;
-    baguetteBox.run('.tz-gallery');  
-  &lt;/script&gt;
+          <div class="row">
 
-&lt;/section&gt;
-</code></pre>
+<!-- Top Row 1st Column ------------------------------------------ Photo 1 PNG -->
 
-<p></main></p>
+           <div data-aos="flip-up" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="1.png">
+                  <img src="1.png">
+                </a>
+              </div>
+            </div>
 
-<p></html></p>
+<!-- Top Row 2nd Column  ------------------------------------------ Photo 2 PNG -->
+
+           <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="2.png">
+                  <img src="2.png">
+                </a>
+              </div>
+            </div>
+           
+<!-- Top Row 3rd Column ------------------------------------------ Photo 3 PNG -->
+
+            <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="3.png">
+                  <img src="3.png">
+                </a>
+
+              </div>
+            </div>
+           
+<!-- Middle Row 1st Column  ------------------------------------------ Photo 4 PNG -->
+
+            <div data-aos="flip-up" data-aos-delay="60" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="4.png">
+                  <img src="4.png">
+                </a>
+              </div>
+            </div>
+           
+<!-- Middle Row 2nd Column ------------------------------------------ Photo 5 PNG -->
+
+            <div data-aos="flip-up" data-aos-delay="80" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="5.png">
+                  <img src="5.png">
+                </a>
+              </div>
+            </div>
+           
+<!-- Middle Row 3rd Column ------------------------------------------ Photo 6 PNG -->
+
+            <div data-aos="flip-up" data-aos-delay="100" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="6.png">
+                  <img src="6.png">
+                </a>
+              </div>
+            </div>
+           
+<!-- Bottom Row 1st Column ------------------------------------------ Photo 7 PNG -->
+
+            <div data-aos="flip-up" data-aos-delay="120" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="7.png">
+                  <img src="7.png">
+                </a>
+              </div>
+            </div>
+           
+<!-- Bottom Row 2nd Column ------------------------------------------ Photo 8 PNG -->
+
+            <div data-aos="flip-up" data-aos-delay="140" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="8.png">
+                  <img src="8.png">
+                </a>
+              </div>
+            </div>
+           
+<!-- Bottom Row 3rd Column ------------------------------------------ Photo 9 PNG -->
+
+            <div data-aos="flip-up" data-aos-delay="160" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="9.png">
+                  <img src="9.png">
+                </a>
+              </div>
+            </div>
+
+<!--------------------------------------------------------------------------------->
+           
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+        baguetteBox.run('.tz-gallery');
+      </script>
+
+    </section>
+
+
+  </main>
+
+
+</html>
